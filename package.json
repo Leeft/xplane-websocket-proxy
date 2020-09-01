@@ -1,0 +1,63 @@
+{
+  "name": "@shiari/xplane-websocket-proxy",
+  "version": "0.1.0",
+  "description": "Accepts websocket requests, and passes messages to X-Plane, plus returns data such as datarefs",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "pkg . --out-path dist",
+    "lint": "eslint src --color",
+    "lint:fix": "eslint src --fix --color",
+    "lint:check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "x-plane"
+  ],
+  "author": "Lianna Eeftinck <liannaee@gmail.com>",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
+    "@types/jest": "^26.0.10",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest-formatting": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "pkg": "^4.4.9",
+    "prettier": "^2.1.1",
+    "sucrase": "^3.15.0"
+  },
+  "dependencies": {
+    "@shiari/xplane-node-udp-client": "^0.1.0",
+    "bufferutil": "^4.0.1",
+    "fsevents": "2.1.2",
+    "simple-jsonrpc-js": "^1.0.1",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.3.1"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2",
+    "fsevents": "2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leeft/xplane-websocket-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Leeft/xplane-websocket-proxy/issues"
+  },
+  "homepage": "https://github.com/Leeft/xplane-websocket-proxy#readme"
+}

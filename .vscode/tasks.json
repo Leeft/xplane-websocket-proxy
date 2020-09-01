@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [{
+			"type": "npm",
+			"script": "build",
+			"problemMatcher": [
+				"$eslint-compact"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "npm: build",
+			"detail": "pkg . --out-path dist"
+		},
+		{
+			"type": "npm",
+			"script": "install",
+			"problemMatcher": [],
+			"label": "npm: install",
+			"detail": "install dependencies from package",
+			"group": "build"
+		}
+	]
+}
